@@ -1,0 +1,5 @@
+factor_graph_path /home/chad/Research/optimalTransport/CouplingSLAM/example/slam/problems_for_paper/small_range_gaussian_problem/data_association/case6/factor_graph.fg
+output_dir /home/chad/Research/optimalTransport/CouplingSLAM/example/slam/problems_for_paper/small_range_gaussian_problem/data_association/case6/gtsam
+incremental_step 1
+artificial_prior_sigma -1
+gt_init 0

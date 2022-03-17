@@ -1,0 +1,9 @@
+Variable Pose SE2 X0 0 0 0
+Variable Pose SE2 X1 10 0 0.7854
+Variable Pose SE2 X2 17.0711 7.0711 1.5708
+Variable Pose SE2 X3 17.0711 17.0711 3.1416
+Variable Pose SE2 X4 7.0711 17.0711 -2.3561
+Variable Pose SE2 X5 0 10 -1.5708
+Variable Landmark R2 L1 5 5
+Variable Landmark R2 L2 12.0711 12.0711
+Factor UnarySE2ApproximateGaussianPriorFactor X0 0 0 0 covariance 0.09 0 0 0 0.09 0 0 0 0.09

@@ -1,0 +1,51 @@
+Variable Pose SE2 X0 60.0 60.0 0.0
+Variable Pose SE2 X1 80.0 60.0 0.0
+Variable Pose SE2 X2 100.0 60.0 0.0
+Variable Pose SE2 X3 120.0 60.0 0.0
+Variable Pose SE2 X4 120.0 80.0 1.5707963267948966
+Variable Pose SE2 X5 100.0 80.0 -3.141592653589793
+Variable Pose SE2 X6 80.0 80.0 -3.141592653589793
+Variable Pose SE2 X7 60.0 80.0 -3.141592653589793
+Variable Pose SE2 X8 59.99999999999999 100.0 1.5707963267948966
+Variable Pose SE2 X9 80.0 100.0 0.0
+Variable Pose SE2 X10 100.0 100.0 0.0
+Variable Pose SE2 X11 120.0 100.0 0.0
+Variable Pose SE2 X12 120.0 120.0 1.5707963267948966
+Variable Pose SE2 X13 100.0 120.0 -3.141592653589793
+Variable Pose SE2 X14 80.0 120.0 -3.141592653589793
+Variable Pose SE2 X15 60.0 120.0 -3.141592653589793
+Variable Landmark R2 L0 0 0
+Variable Landmark R2 L1 140 160
+Variable Landmark R2 L2 160 20
+Factor UnarySE2ApproximateGaussianPriorFactor X0 60.0 60.0 0.0 covariance 0.0001 0.0 0.0 0.0 1e-06 0.0 0.0 0.0 1e-08
+Factor SE2R2RangeGaussianLikelihoodFactor X0 L0 88.10150446971218 2
+Factor SE2RelativeGaussianLikelihoodFactor X0 X1 19.987762614271553 -0.0020995574838632443 -0.002145937244312446 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X1 L0 101.73081525864936 2
+Factor SE2RelativeGaussianLikelihoodFactor X1 X2 19.953974556493645 0.007014283296853808 -0.00152241380179019 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X2 L1 108.34137433480427 2
+Factor SE2RelativeGaussianLikelihoodFactor X2 X3 19.99502465517736 0.0058586899470391895 -0.00412028141899512 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor AmbiguousDataAssociationFactor Observer X3 Observed L0 L1 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 133.51924424196037 Sigma 2
+Factor SE2RelativeGaussianLikelihoodFactor X3 X4 -0.004543522468979704 19.992323907191906 1.5685965442602683 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X4 L1 82.11725609725234 2
+Factor SE2RelativeGaussianLikelihoodFactor X4 X5 -0.00015862236495727146 19.982442737206135 1.571961957222328 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor AmbiguousDataAssociationFactor Observer X5 Observed L0 L1 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 125.86124639423113 Sigma 2
+Factor SE2RelativeGaussianLikelihoodFactor X5 X6 20.0228926581661 0.0036178666180073102 0.001004988677803631 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor AmbiguousDataAssociationFactor Observer X6 Observed L0 L1 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 114.93879688837643 Sigma 2
+Factor SE2RelativeGaussianLikelihoodFactor X6 X7 19.98632499081186 -0.000478764386205779 -0.0018715388685182077 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor AmbiguousDataAssociationFactor Observer X7 Observed L1 L0 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 112.60130883059557 Sigma 2
+Factor SE2RelativeGaussianLikelihoodFactor X7 X8 -0.0027708511243817297 -20.010606010546322 -1.5715898338486087 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X8 L2 126.68813934841778 2
+Factor SE2RelativeGaussianLikelihoodFactor X8 X9 -0.0026847704391883952 -19.98309585316756 -1.5708216559927344 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X9 L2 110.90246429257705 2
+Factor SE2RelativeGaussianLikelihoodFactor X9 X10 20.00468338565018 0.006642685206633806 0.001484088321154875 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X10 L0 141.0376851325863 2
+Factor SE2RelativeGaussianLikelihoodFactor X10 X11 19.982252512739777 -0.0030186728737050927 0.003384909202055475 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor AmbiguousDataAssociationFactor Observer X11 Observed L1 L0 L2 Weights 0.3333333333333333 0.3333333333333333 0.3333333333333333 Binary SE2R2RangeGaussianLikelihoodFactor Observation 63.34716871291964 Sigma 2
+Factor SE2RelativeGaussianLikelihoodFactor X11 X12 -0.0007369026647285213 19.987258520650474 1.5749968370678538 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X12 L2 107.94361404765334 2
+Factor SE2RelativeGaussianLikelihoodFactor X12 X13 -0.001196332986674517 20.01234448411283 1.5700918271019093 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X13 L1 54.28350609887952 2
+Factor SE2RelativeGaussianLikelihoodFactor X13 X14 19.993013637323404 -0.0008396753921827789 0.001173246382364379 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor AmbiguousDataAssociationFactor Observer X14 Observed L2 L0 L1 Weights 0.3333333333333333 0.3333333333333333 0.3333333333333333 Binary SE2R2RangeGaussianLikelihoodFactor Observation 129.74045157640597 Sigma 2
+Factor SE2RelativeGaussianLikelihoodFactor X14 X15 20.018621020759344 0.0011588318356532156 0.0017702823285414837 covariance 0.0004 0.0 0.0 0.0 1.6e-05 0.0 0.0 0.0 4e-06
+Factor SE2R2RangeGaussianLikelihoodFactor X15 L2 139.9125603553162 2

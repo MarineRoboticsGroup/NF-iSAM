@@ -1,0 +1,1 @@
+{"flow_number": 1, "num_knots": 5, "local_sample_num": 600, "flow_iterations": 80, "cuda_training": false, "poster_sample_num": 500, "learning_rate": 0.02, "flow_type": "NSF_AR", "incremental_steps": 1}

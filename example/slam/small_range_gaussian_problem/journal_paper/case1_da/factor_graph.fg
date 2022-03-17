@@ -1,0 +1,22 @@
+Variable Pose SE2 X0 0.0 0.0 1.57079633
+Variable Pose SE2 X1 0.0 30.0 1.57079633
+Variable Pose SE2 X2 30.0 30.0 0.0
+Variable Pose SE2 X3 60.0 30.0 0.0
+Variable Pose SE2 X4 90.0 30.0 0.0
+Variable Pose SE2 X5 90.0 0.0 -1.57079633
+Variable Landmark R2 L1 30.0 -30.0
+Variable Landmark R2 L2 60.0 -30.0
+Factor UnarySE2ApproximateGaussianPriorFactor X0 0.0 0.0 1.57079633 covariance 0.0004 0.0 0.0 0.0 0.000016 0.0 0.0 0.0 0.000004
+Factor SE2RelativeGaussianLikelihoodFactor X0 X1 30 0 0.0 covariance 0.04 0.0 0.0 0.0 0.0016 0.0 0.0 0.0 0.0004
+Factor SE2RelativeGaussianLikelihoodFactor X1 X2 0 -30 -1.57079633 covariance 0.04 0.0 0.0 0.0 0.0016 0.0 0.0 0.0 0.0004
+Factor SE2RelativeGaussianLikelihoodFactor X2 X3 30 0 0.0 covariance 0.04 0.0 0.0 0.0 0.0016 0.0 0.0 0.0 0.0004
+Factor SE2RelativeGaussianLikelihoodFactor X3 X4 30 0 0.0 covariance 0.04 0.0 0.0 0.0 0.0016 0.0 0.0 0.0 0.0004
+Factor SE2RelativeGaussianLikelihoodFactor X4 X5 0 -30 -1.57079633 covariance 0.04 0.0 0.0 0.0 0.0016 0.0 0.0 0.0 0.0004
+Factor SE2R2RangeGaussianLikelihoodFactor X0 L1 42.42640687119285 2
+Factor SE2R2RangeGaussianLikelihoodFactor X0 L2 67.0820393249937 2
+Factor AmbiguousDataAssociationFactor Observer X1 Observed L1 L2 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 67.0820393249937 Sigma 2
+Factor AmbiguousDataAssociationFactor Observer X2 Observed L1 L2 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 60.0 Sigma 2
+Factor AmbiguousDataAssociationFactor Observer X3 Observed L1 L2 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 60.0 Sigma 2
+Factor AmbiguousDataAssociationFactor Observer X4 Observed L1 L2 Weights 0.5 0.5 Binary SE2R2RangeGaussianLikelihoodFactor Observation 67.0820393249937 Sigma 2
+Factor SE2R2RangeGaussianLikelihoodFactor X5 L1 67.0820393249937 2
+Factor SE2R2RangeGaussianLikelihoodFactor X5 L2 42.42640687119285 2
