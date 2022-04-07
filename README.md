@@ -1,14 +1,20 @@
 # Normalizing flow incremental smoothing and mapping (NF-iSAM)
 This is the codebase of NF-iSAM. We also put together here some examples and scripts for testing the performance of NF-iSAM and other solvers (mm-iSAM, GTSAM, and nested sampling) that are in comparison.
 
-The following instruction was tested on Ubuntu 18.04 with Miniconda.
+The following instruction was tested on Ubuntu 18.04 and 20.04 with Miniconda. For Ubuntu 22.04, [this workaround](https://github.com/MarineRoboticsGroup/NF-iSAM/issues/1#issuecomment-1080046746) may be helpful.
 
 ## Requirements on Ubuntu
 ```
+sudo apt-get update
 sudo apt-get install gcc libc6-dev
-sudo apt-get install gfortran libgfortran3
+sudo apt-get install g++
+sudo apt-get install gfortran
+sudo apt-get install libgfortran3
+(to install libgfortran3 for ubuntu20.04.md, follow https://gist.github.com/sakethramanujam/faf5b677b6505437dbdd82170ac55322)
 sudo apt-get install libsuitesparse-dev
+sudo apt-get install python3 python3-dev
 ```
+
 We recommend to install NF-iSAM using conda environment. The default env name in the environment.yml is NFiSAM.
 
 ## Installation
