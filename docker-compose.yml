@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  nf-isam-nvidia:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - DISPLAY=$DISPLAY
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    volumes:
+      - ./src/:/app/src/
+      - ./example/:/app/example/
+      - ./tests/:/app/tests/
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    entrypoint: ["tail", "-f", "/dev/null"]
+  nf-isam:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - ./src/:/app/src/
+      - ./example/:/app/example/
+      - ./tests/:/app/tests/
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    entrypoint: ["tail", "-f", "/dev/null"]
