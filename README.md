@@ -15,7 +15,7 @@ sudo apt-get install libsuitesparse-dev
 sudo apt-get install python3 python3-dev
 ```
 
-We recommend to install NF-iSAM using conda environment. The default env name in the environment.yml is NFiSAM.
+We recommend to install NF-iSAM using conda environments. The default env name in the environment.yml is NFiSAM.
 
 ## Installation
 ```
