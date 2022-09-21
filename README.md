@@ -1,6 +1,31 @@
 # Normalizing flow incremental smoothing and mapping (NF-iSAM)
 This is the codebase of NF-iSAM. We also put together here some examples and scripts for testing the performance of NF-iSAM and other solvers (mm-iSAM, GTSAM, and nested sampling) that are in comparison.
 
+### References
+
+Related papers describing our solver are as follows:
+* The [conference paper](https://arxiv.org/abs/2105.05045)
+* The [extended version](https://arxiv.org/abs/2110.00876)
+
+If you found this code useful, please cite it as:
+```bibtex
+@inproceedings{huang2021nf,
+  title={NF-iSAM: {I}ncremental {S}moothing and {M}apping via {N}ormalizing {F}lows},
+  author={Huang, Qiangqiang and Pu, Can and Fourie, Dehann and Khosoussi, Kasra and How, Jonathan P and Leonard, John J},
+  booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={1095--1102},
+  year={2021},
+  organization={IEEE}
+}
+@article{huang2021incremental,
+  title={Incremental {N}on-Gaussian {I}nference for {S}LAM {U}sing {N}ormalizing {F}lows},
+  author={Huang, Qiangqiang and Pu, Can and Khosoussi, Kasra and Rosen, David M and Fourie, Dehann and How, Jonathan P and Leonard, John J},
+  journal={arXiv preprint arXiv:2110.00876},
+  year={2021}
+}
+```
+
+
 The following instruction was tested on Ubuntu 18.04 and 20.04 with Miniconda. For Ubuntu 22.04, [this workaround](https://github.com/MarineRoboticsGroup/NF-iSAM/issues/1#issuecomment-1080046746) may be helpful.
 
 ## Requirements on Ubuntu
