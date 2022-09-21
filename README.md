@@ -1,7 +1,7 @@
 # Normalizing flow incremental smoothing and mapping (NF-iSAM)
 This is the codebase of NF-iSAM. We also put together here some examples and scripts for testing the performance of NF-iSAM and other solvers (mm-iSAM, GTSAM, and nested sampling) that are in comparison.
 
-### References
+## References
 
 Related papers describing our solver are as follows:
 * The [conference paper](https://arxiv.org/abs/2105.05045)
