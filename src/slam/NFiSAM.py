@@ -17,7 +17,7 @@ from utils.Functions import theta_to_pipi
 
 class NFiSAMArgs(SolverArgs):
     def __init__(self,
-                 elimination_method: str = "natural",
+                 elimination_method: str = "pose_first",
                  posterior_sample_num: int = 500,
                  local_sample_num: int = 500,
                  store_clique_samples: bool = False,
